@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<main class="shelf">
+  {% for book in site.data.books  %}
+  <article class="book">
+    <figure class="book-cover">
+      <img src="images/{{ book.image }}" alt="">
+    </figure>
+    <div class="book-info">
+      <h2>{{ book.title }}</h2>
+      <p>{{ book.author }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</main>
