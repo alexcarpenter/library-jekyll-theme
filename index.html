@@ -5,7 +5,9 @@ layout: default
   {% for book in site.data.books  %}
   <article class="book">
     <figure class="book-cover">
-      <img src="images/{{ book.image }}" alt="">
+      <a href="{{ book.link }}">
+        <img src="images/{{ book.image }}" alt="{{ book.title }}">
+      </a>
     </figure>
     <div class="book-info">
       <h2>{{ book.title }}</h2>

@@ -5,8 +5,13 @@
 
 @import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600');
 
+
+/*----- Variables -----*/
+
 $spacing-unit: 10px;
 $highlight-color: red;
+$mq-sm: 35rem;
+$mq-md: 40rem;
 
 
 /*----- General/Reset -----*/
@@ -51,9 +56,13 @@ img {
 
 .book {
   display: flex;
-  flex: 1 0 25%;
+  flex: 1 0 100%;
   flex-direction: column;
   margin-bottom: ($spacing-unit * 4);
+
+  @media (min-width: $mq-md) {
+    flex: 1 0 25%;
+  }
 }
 
 .book-cover {
@@ -67,6 +76,10 @@ img {
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  a {
+    display: block;
   }
 }
 
@@ -82,5 +95,6 @@ img {
 /*----- Footer -----*/
 
 .footer {
+  margin-bottom: 100px;
   text-align: center;
 }
