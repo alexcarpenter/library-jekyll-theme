@@ -10,8 +10,9 @@
 
 $spacing-unit: 10px;
 $highlight-color: red;
-$mq-sm: 35rem;
+$mq-sm: 25rem;
 $mq-md: 40rem;
+$mq-lg: 55rem;
 
 
 /*----- General/Reset -----*/
@@ -50,17 +51,22 @@ img {
 .shelf {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   max-width: 1200px;
   margin: 100px auto;
 }
 
 .book {
   display: flex;
-  flex: 1 0 100%;
   flex-direction: column;
   margin-bottom: ($spacing-unit * 4);
+  flex: 1 0 100%;
 
   @media (min-width: $mq-md) {
+    flex: 1 0 50%;
+  }
+
+  @media (min-width: $mq-lg) {
     flex: 1 0 25%;
   }
 }
@@ -70,15 +76,15 @@ img {
   display: flex;
   align-items: flex-end;
   flex: 1;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: ($spacing-unit * 2);
+  padding-left: ($spacing-unit * 2);
 
-  img {
+  > img {
     max-width: 100%;
     height: auto;
   }
 
-  a {
+  > a {
     display: block;
   }
 }
@@ -86,9 +92,9 @@ img {
 .book-info {
   display: flex;
   flex-direction: column;
-  flex: 0;
+  flex: 1;
   border-top: 5px solid #eee;
-  padding: $spacing-unit;
+  padding: ($spacing-unit * 2);
 }
 
 
