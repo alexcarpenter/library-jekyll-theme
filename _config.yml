@@ -11,7 +11,7 @@ url: "http://alexcarpenter.me"
 # Collections
 collections:
   books:
-    output: true
+    output: false
 
 # Build settings
 markdown: kramdown
