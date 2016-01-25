@@ -9,9 +9,9 @@ baseurl: "/library-jekyll-theme"
 url: "http://alexcarpenter.me"
 
 # Collections
-collections:
-  books:
-    output: false
+#collections:
+#  books:
+#    output: false
 
-# Build settings
-markdown: kramdown
+sass:
+  style: compressed
