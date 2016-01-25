@@ -2,7 +2,7 @@
 layout: default
 ---
 <main class="shelf">
-  {% for book in site.books  %}
+  {% for book in site.data.books  %}
   <article class="book">
     <figure class="book-cover">
       <a href="{{ book.link }}">
