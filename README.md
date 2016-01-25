@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-sily create a digital bookshelf of your favorite books.
-=======
 # library-jekyll-theme
 
 Easily create a digital bookshelf of your favorite books.
->>>>>>> master
 
 [Demo](http://alexcarpenter.me/library-jekyll-theme/)
 
