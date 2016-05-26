@@ -2,7 +2,7 @@
 
 Easily create a digital bookshelf of your favorite books.
 
-[Demo](http://alexcarpenter.me/library-jekyll-theme/)
+[Demo](http://alexcarpenter.github.io/library-jekyll-theme/)
 
 ## Author
 - [Website](http://alexcarpenter.me)
